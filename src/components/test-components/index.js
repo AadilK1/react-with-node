@@ -14,19 +14,16 @@ class TestList extends React.Component {
 
   calltoParent(){
     console.log("calling parent");
-   
   }
 
 
     render() {
         return (
-          <ul>
+          <>
             <li>Tiktok</li>
             <li>Telegram</li>
-            <div>
-          <a href='javascript:void(0)' onClick={() => this.props.sampleParent()}>Oculus</a>
-          </div>
-          </ul>
+          <li> <a href='javascript:void(0)' onClick={() => this.props.sampleParent()}>Oculus</a></li>
+          </>
         );
       }
     }
